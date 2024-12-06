@@ -13,18 +13,18 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version> <!-- Version, die Java 21 unterstützt -->
+                <version>3.10.1</version> <!-- Version bleibt gleich -->
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>1.8</source> <!-- Kompatibel mit Java 8 -->
+                    <target>1.8</target> <!-- Kompatibel mit Java 8 -->
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -36,5 +36,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
